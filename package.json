@@ -1,5 +1,5 @@
 {
-  "name": "Week-13",
+  "name": "NMTafe TailwindCSS Components",
   "version": "1.0.0",
   "description": "",
   "main": "",
@@ -9,14 +9,16 @@
     "watch": "npx tailwindcss -i ./src/css/input.css -o ./dist/assets/css/styles.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["TailwindCSS","Demo","NMTAFE"],
+  "keywords": [
+    "TailwindCSS",
+    "Demo",
+    "NMTAFE"
+  ],
   "author": "Adrian Gould",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.7",
-    "chokidar": "^3.5.3",
     "concurrently": "^7.1.0",
-    "live-server": "^1.2.2",
     "postcss": "^8.4.13",
     "tailwindcss": "^3.0.24"
   },
@@ -24,6 +26,14 @@
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.1",
     "@tailwindcss/line-clamp": "^0.4.0",
-    "@tailwindcss/typography": "^0.5.2"
+    "@tailwindcss/typography": "^0.5.2",
+    "ansi-styles": "^6.1.0",
+    "chokidar": "^3.5.3",
+    "fsevents": "^2.3.2",
+    "glob-parent": "^6.0.2",
+    "live-server": "^1.2.2",
+    "micromatch": "^4.0.5",
+    "source-map-url": "^0.4.1",
+    "uuid": "^8.3.2"
   }
 }
