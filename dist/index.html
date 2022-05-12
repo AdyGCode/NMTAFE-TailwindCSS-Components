@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tailwind Demo</title>
+    <title>Tailwind Components</title>
 
     <!-- Fonts -->
 
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 
     <!-- JS (Deferred) -->
-
+    <script src="./assets/js/base.js" type="text/javascript" defer></script>
     <!--
   Filename: ...
   Location: ...
@@ -21,32 +22,150 @@
   Version:  ...
   -->
 </head>
-<body>
+<body class="flex flex-col min-h-screen w-full h-16 bg-gray-300">
 
+<header class="bg-stone-800 p-6 sticky top-0">
+    <h1 class="text-3xl font-bold text-stone-100 flex-none">Components for TailwindCSS</h1>
+</header>
 
+<div class="flex-grow flex">
+    <nav class="bg-stone-800 flex flex-col ">
+        <a href="#" data-page="index"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-fuchsia-500
+                    hover:bg-fuchsia-900 ">
+            Introduction
+        </a>
+        <a href="#" data-page="grid"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-pink-500
+                    hover:bg-pink-900 ">
+            Grid
+        </a>
+        <a href="#" data-page="flexbox"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-rose-500
+                    hover:bg-rose-900 ">
+            Flexbox
+        </a>
+        <a href="#" data-page="colours"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-red-500
+                    hover:bg-red-900 ">
+            Colours
+        </a>
+        <a href="#" data-page="headings"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-orange-500
+                    hover:bg-orange-900 ">
+            Headings
+        </a>
+        <a href="#" data-page="text"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-amber-500
+                    hover:bg-amber-900 ">
+            Text
+        </a>
+        <a href="#" data-page="preformatted"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-yellow-500
+                    hover:bg-yellow-900 ">
+            Preformatted
+        </a>
+        <a href="#" data-page="lists"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-lime-500
+                    hover:bg-lime-900 ">
+            Lists
+        </a>
+        <a href="#" data-page="fomr-datalist"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-green-500
+                    hover:bg-green-900 ">
+            Form Datalist
+        </a>
+        <a href="#" data-page="form-fieldset"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-emerald-500
+                    hover:bg-emerald-900 ">
+            Form Fieldset
+        </a>
+        <a href="#" data-page="form-disabled"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-teal-500
+                    hover:bg-teal-900 ">
+            Form Disabled
+        </a>
+        <a href="#" data-page="form-read-only"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-cyan-500
+                    hover:bg-cyan-900 ">
+            Form Read-Only
+        </a>
+        <a href="#" data-page="grid"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-sky-500
+                    hover:bg-sky-900 ">
+            Grids
+        </a>
+        <a href="#" data-page="flexbox"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-blue-500
+                    hover:bg-blue-900 ">
+            Flexbox
+        </a>
+        <a href="#" data-page="buttons"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-indigo-500
+                    hover:bg-indigo-900 ">
+            Buttons
+        </a>
+        <a href="#" data-page="lists"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-violet-500
+                    hover:bg-violet-900 ">
+            Lists
+        </a>
+        <a href="#" data-page="preformatted"
+           class="overflow-clip p-2
+                    transition ease-in-out duration-500
+                    bg-purple-500
+                    hover:bg-purple-900 ">
+            Preformatted
+        </a>
+    </nav>
 
-<div class="columns-2 p-16">
+    <main class="bg-white flex-grow px-16 pt-4" id="target">
+        <h2 class="my-4 mb-8 text-4xl font-semibold  ">Tailwind Components</h2>
+        <p class="my-2">Welcome to a very simple 'style guide' or 'component reference'.</p>
+        <p class="my-2">This site is formatted using Tailwind CSS v3. No custom styles have been added.</p>
+        <h3 class="text-2xl my-4 text-slate-700">Notes</h3>
+        <p class="my-2">In this simple site we have used a few lines of JS to dynamically load content into the main area.</p>
+        <p class="my-2">Clicking on the menu items on the left will reveal the content for that section.</p>
+        <p class="my-2">More details about the site and components in the Introduction section.</p>
+    </main>
 
-    <div class="content">
-        <h1 class="text-3xl font-bold underline text-red-500">
-            Hello world!
-        </h1>
-    </div>
-
-<a href="/" aria-label="View Item" class="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
-    <div class="flex flex-col h-full">
-        <img src=https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260     class="object-cover w-full h-48" alt="" />
-        <div class="flex-grow border border-t-0 rounded-b">
-            <div class="p-5">
-                <h6 class="mb-2 font-semibold leading-5">Baseball ipsum dolor</h6>
-                <p class="text-sm text-gray-900">
-                    Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy.
-                </p>
-            </div>
-        </div>
-    </div>
-</a>
 </div>
 
+<footer class="bg-stone-800 h-24 p-8 text-slate-100 text-sm flex px-32">
+    <div class="flex-grow pl-16">L</div>
+    <div class="pt-2">R</div>
+</footer>
 </body>
 </html>
